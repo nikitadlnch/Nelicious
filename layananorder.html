@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- tipe dokumen HTML5 -->
+<html>
+<head>
+    <meta charset="utf-8"> <!-- pengaturan karakter -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- agar responsif -->
+	<title>Layanan Order</title> <!-- judul halaman yang tampil di tab browser -->
+	<link rel="stylesheet" type="text/css" href="style.css"> <!-- menghubungkan dengan file css -->
+</head>
+<body> <!-- bagian utama halaman -->
+    <header class="layout-header"> <!-- header untuk logo dan judul/nama website -->
+        <div class="halamanlogo"> <!-- class untuk logo dan nama -->
+            <img src="logo.png"> <!-- logo website -->
+            <h5>NELICIOUS<br>Catering Sehat</h5> <!-- nama website/catering -->
+        </div>
+
+	<nav> <!-- untuk bagian navigasi -->
+        <div class="Navigasi">
+            <ul> <!-- list navigasi -->
+                <li><a href="home.html">Beranda</a></li> <!-- navigasi ke beranda -->
+                <li><a href="tentangkami.html">Tentang Kami</a></li> <!-- navigasi ke tentang kami -->
+                <li><a href="daftarmenu.html">Daftar Menu</a></li> <!-- navigasi ke daftar menu -->
+                <li><a href="infopemesanan.html">Info Pemesanan</a></li> <!-- navigasi ke info pemesanan -->
+                <li><a href="layananorder.html">Layanan Order</a></li> <!-- navigasi ke layanan order -->
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+	<article> <!-- bagian isi/konten halaman website -->
+        <div class="order-container"> <!-- tempat untuk order -->
+        <h2>FORM ORDER</h2>
+
+        <label>Nama Customer :</label>
+        <input type="text" id="nama"> <!-- untuk input nama customer -->
+        <br>
+        <label>Email :</label>
+        <input type="text" id="email"> <!-- untuk input email customer -->
+        <br>
+        <label>Nomor HP :</label>
+        <input type="text" id="nomorhp"> <!-- untuk input nomorhp customer -->
+        <br>
+        <label>Alamat Pengiriman :</label>
+        <input type="text" id="alamat"> <!-- untuk input alamat kirim -->
+        <br>
+        <label>Pesanan :</label>
+        <input type="text" id="pesanan"> <!-- untuk input pesanan -->
+        <br>
+        <label>Jumlah Porsi :</label>
+        <input type="number" id="qty"> <!-- untuk input jumlah pesanan -->
+        <br>
+        <label>Harga :</label>
+        <input type="text" id="harga"> <!-- untuk input harga pesanan -->
+        <br>
+        <label>Catatan :</label>
+        <input type="text" id="catatan"> <!-- untuk input catatan ke catering -->
+        <br>
+        <p>Total Harga = <span id="total">0</span></p> <!-- untuk menampilkan total harga -->
+
+        <button type="submit" onclick="proses()">Proses</button> <!-- tombol untuk memproses -->
+        <button type="submit" onclick="cetak()">Cetak</button> <!-- tombol untuk cetak hasil pesanannya -->
+    </div>
+    <div class="restoran-img"> <!-- gambar tempat catering -->
+		<img src="restoran1.png">
+	</div>
+	</article>
+
+	<footer class="footer"> <!-- bagian footer halaman -->
+        <div class="footer-content">
+            <h3>Nelicious Catering Sehat</h3> <!-- nama brand di footer -->
+ 
+        <div class="footer-sosmed"> <!-- logo sosmed -->
+                <img src="ig.png"> <!-- logo ig -->
+                <img src="fb.png"> <!-- logo fb -->
+        </div>
+        <center>
+        <p>Copyright & Copy; 2025 by Nelicious (Eline/11 & Nikita/26) XI.4</p> <!-- teks copyright -->
+        </center>
+        </div>
+    </footer>
+
+	<script src="data.js"></script> <!-- untuk menghubungkan dengan file js -->
+</body>
+</html>
